@@ -60,16 +60,6 @@ export default function TripDetails() {
       }
     : null;
 
-  const adaptedAttractions = trip.attractions?.map((a: any) => ({
-    fsq_id: a.fsq_id || a.name,
-    name: a.name,
-    location: {
-      address: a.address || a.location?.address,
-    },
-    categories: [{ name: a.category || "Place" }],
-    distance: a.distance || 0,
-  }));
-
   return (
     <div className="space-y-6">
       
