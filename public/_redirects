@@ -1,0 +1,2 @@
+/api/fsq/* https://places-api.foursquare.com/:splat 200 
+/* /index.html   200
